@@ -1,13 +1,13 @@
-[debug] [2020-11-14T16:48:17.825Z] ----------------------------------------------------------------------
-[debug] [2020-11-14T16:48:17.829Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ARNOLD IRIAS\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
-[debug] [2020-11-14T16:48:17.829Z] CLI Version:   8.16.2
-[debug] [2020-11-14T16:48:17.830Z] Platform:      win32
-[debug] [2020-11-14T16:48:17.830Z] Node Version:  v14.15.0
-[debug] [2020-11-14T16:48:17.832Z] Time:          Sat Nov 14 2020 10:48:17 GMT-0600 (hora estándar central)
-[debug] [2020-11-14T16:48:17.833Z] ----------------------------------------------------------------------
-[debug] [2020-11-14T16:48:17.833Z] 
-[debug] [2020-11-14T16:48:17.844Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-11-14T16:48:17.845Z] > authorizing via signed-in user
+[debug] [2020-11-14T19:15:17.604Z] ----------------------------------------------------------------------
+[debug] [2020-11-14T19:15:17.608Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ARNOLD IRIAS\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting:github
+[debug] [2020-11-14T19:15:17.608Z] CLI Version:   8.16.2
+[debug] [2020-11-14T19:15:17.608Z] Platform:      win32
+[debug] [2020-11-14T19:15:17.609Z] Node Version:  v14.15.0
+[debug] [2020-11-14T19:15:17.610Z] Time:          Sat Nov 14 2020 13:15:17 GMT-0600 (hora estándar central)
+[debug] [2020-11-14T19:15:17.610Z] ----------------------------------------------------------------------
+[debug] [2020-11-14T19:15:17.610Z] 
+[debug] [2020-11-14T19:15:17.619Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-14T19:15:17.620Z] > authorizing via signed-in user
 [info] 
      ######## #### ########  ######## ########     ###     ######  ########
      ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
@@ -19,6 +19,10 @@ You're about to initialize a Firebase project in this directory:
 
   C:\Users\ARNOLD IRIAS\ajshop
 
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
 [info] 
 === Project Setup
 [info] 
@@ -26,125 +30,26 @@ You're about to initialize a Firebase project in this directory:
 [info] You can create multiple project aliases by running firebase use --add, 
 [info] but for now we'll just set up a default project.
 [info] 
-[debug] [2020-11-14T16:52:00.286Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
+[info] i  .firebaserc already has a default project, using ajdemo-f8ee0. 
+[debug] [2020-11-14T19:15:23.211Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/ajdemo-f8ee0  
  
-[debug] [2020-11-14T16:52:00.785Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 14 Nov 2020 16:51:59 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[info] i  Using project ajdemo-f8ee0 (AJShop) 
+[debug] [2020-11-14T19:15:23.966Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 14 Nov 2020 19:15:22 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
 [info] 
-=== Database Setup
-[info] 
-[info] Firebase Realtime Database Rules allow you to define how your data should be
-[info] structured and when your data can be read from and written to.
-[info] 
-[debug] [2020-11-14T16:52:24.436Z] >>> HTTP REQUEST GET https://ajdemo-f8ee0.firebaseio.com/.settings/rules.json  
- 
-[debug] [2020-11-14T16:52:24.964Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Sat, 14 Nov 2020 16:52:23 GMT","content-type":"application/json; charset=utf-8","content-length":"159","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
-[info] +  Database Rules for ajdemo-f8ee0 have been downloaded to database.rules.json. 
-[info] Future modifications to database.rules.json will update Database Rules when you run
-[info] firebase deploy.
-[info] 
-=== Firestore Setup
-[debug] [2020-11-14T16:52:24.973Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/ajdemo-f8ee0/services/firestore.googleapis.com  
- 
-[debug] [2020-11-14T16:52:25.696Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 14 Nov 2020 16:52:24 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2020-11-14T16:52:25.697Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/ajdemo-f8ee0  
- 
-[debug] [2020-11-14T16:52:26.249Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 14 Nov 2020 16:52:25 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2020-11-14T16:52:26.249Z] database_type: CLOUD_FIRESTORE
-[debug] [2020-11-14T16:52:26.251Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-11-14T16:52:26.252Z] > authorizing via signed-in user
-[debug] [2020-11-14T16:52:26.252Z] [iam] checking project ajdemo-f8ee0 for permissions ["firebase.projects.get"]
-[debug] [2020-11-14T16:52:26.253Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ajdemo-f8ee0:testIamPermissions  
- {"permissions":["firebase.projects.get"]}
-[debug] [2020-11-14T16:52:26.731Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 14 Nov 2020 16:52:25 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=32","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[info] 
-[info] Firestore Security Rules allow you to define how and when to allow
-[info] requests. You can keep these rules in your project directory
-[info] and publish them with firebase deploy.
-[info] 
-[debug] [2020-11-14T16:53:40.932Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/ajdemo-f8ee0/releases?pageSize=10&pageToken=  
- 
-[debug] [2020-11-14T16:53:41.460Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 14 Nov 2020 16:53:40 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2020-11-14T16:53:41.461Z] Found ruleset: projects/ajdemo-f8ee0/rulesets/34033846-ee1a-4bc1-b202-b6b411f53237
-[debug] [2020-11-14T16:53:41.462Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/ajdemo-f8ee0/rulesets/34033846-ee1a-4bc1-b202-b6b411f53237  
- 
-[debug] [2020-11-14T16:53:41.823Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 14 Nov 2020 16:53:40 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[info] 
-[info] Firestore indexes allow you to perform complex queries while
-[info] maintaining performance that scales with the size of the result
-[info] set. You can keep index definitions in your project directory
-[info] and publish them with firebase deploy.
-[info] 
-[debug] [2020-11-14T16:54:04.071Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/ajdemo-f8ee0/databases/(default)/collectionGroups/-/indexes  
- 
-[debug] [2020-11-14T16:54:04.072Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/ajdemo-f8ee0/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false  
- 
-[debug] [2020-11-14T16:54:04.605Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 14 Nov 2020 16:54:03 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2020-11-14T16:54:04.840Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 14 Nov 2020 16:54:03 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[info] 
-=== Functions Setup
-[info] 
-[info] A functions directory will be created in your project with a Node.js
-[info] package pre-configured. Functions can be deployed with firebase deploy.
-[info] 
-[debug] [2020-11-14T16:54:04.848Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-11-14T16:54:04.848Z] > authorizing via signed-in user
-[debug] [2020-11-14T16:54:04.849Z] [iam] checking project ajdemo-f8ee0 for permissions ["firebase.projects.get"]
-[debug] [2020-11-14T16:54:04.849Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ajdemo-f8ee0:testIamPermissions  
- {"permissions":["firebase.projects.get"]}
-[debug] [2020-11-14T16:54:05.189Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 14 Nov 2020 16:54:04 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=38","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2020-11-14T16:54:05.190Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/ajdemo-f8ee0/services/cloudfunctions.googleapis.com:enable  
- 
-[debug] [2020-11-14T16:54:05.191Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/ajdemo-f8ee0/services/runtimeconfig.googleapis.com:enable  
- 
-[debug] [2020-11-14T16:54:05.622Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 14 Nov 2020 16:54:04 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2020-11-14T16:54:05.678Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 14 Nov 2020 16:54:04 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[info] +  Wrote functions/package.json 
-[info] +  Wrote functions/.eslintrc.js 
-[info] +  Wrote functions/tsconfig.json 
-[info] +  Wrote functions/src/index.ts 
-[info] +  Wrote functions/.gitignore 
-[info] 
-=== Hosting Setup
-[info] 
-[info] Your public directory is the folder (relative to your project directory) that
-[info] will contain Hosting assets to be uploaded with firebase deploy. If you
-[info] have a build process for your assets, use your build's output directory.
-[info] 
-[debug] [2020-11-14T16:59:31.016Z] >>> HTTP REQUEST GET https://www.gstatic.com/firebasejs/releases.json  
- 
-[debug] [2020-11-14T16:59:31.288Z] <<< HTTP RESPONSE 200 {"accept-ranges":"bytes","vary":"Accept-Encoding, Origin","content-type":"application/json","cross-origin-resource-policy":"cross-origin","content-length":"1411","date":"Sat, 14 Nov 2020 16:54:43 GMT","expires":"Sat, 14 Nov 2020 17:44:43 GMT","last-modified":"Fri, 13 Nov 2020 00:33:17 GMT","x-content-type-options":"nosniff","server":"sffe","x-xss-protection":"0","cache-control":"public, max-age=3000","age":"287","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\""}
-[info] +  Wrote npm run build/index.html 
+=== Hosting:github Setup
 [info] 
 [info] i  Detected a .git folder at C:\Users\ARNOLD IRIAS\ajshop 
 [info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
 [info] 
 [info] Visit this URL on this device to log in:
-[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=214676530&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=375279848&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
 [info] 
 [info] Waiting for authentication...
-[debug] [2020-11-14T17:00:11.208Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
- {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"b0cca56b440734ad679a","redirect_uri":"http://localhost:9005","state":"214676530"}
-[debug] [2020-11-14T17:00:11.595Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Sat, 14 Nov 2020 17:00:10 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","status":"200 OK","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With","etag":"W/\"c1569b712c396168f7244461383c0a06\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker.js gist.github.com/socket-worker.js","x-github-request-id":"1425:183E:124B7FF:19CE4D0:5FB00D1A"}
-[debug] [2020-11-14T17:00:11.596Z] >>> HTTP REQUEST GET https://api.github.com/user  
+[debug] [2020-11-14T19:15:24.864Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"17702e5b1e7ec7a8237b","redirect_uri":"http://localhost:9005","state":"375279848"}
+[debug] [2020-11-14T19:15:25.251Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Sat, 14 Nov 2020 19:15:24 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","status":"200 OK","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With","etag":"W/\"e248284763f1120034683bd3cd72ac56\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker.js gist.github.com/socket-worker.js","x-github-request-id":"DB4E:11C7:B51F38:1196B52:5FB02CCC"}
+[debug] [2020-11-14T19:15:25.253Z] >>> HTTP REQUEST GET https://api.github.com/user  
  
-[debug] [2020-11-14T17:00:11.984Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Sat, 14 Nov 2020 17:00:10 GMT","content-type":"application/json; charset=utf-8","content-length":"1413","status":"200 OK","cache-control":"private, max-age=60, s-maxage=60","vary":"Accept, Authorization, Cookie, X-GitHub-OTP, Accept-Encoding, Accept, X-Requested-With","etag":"\"ff60ec8091f8401c7c276090078018646af9640bcfef33661ba918f3701ea80d\"","last-modified":"Sat, 14 Nov 2020 17:00:09 GMT","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4999","x-ratelimit-reset":"1605376810","x-ratelimit-used":"1","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","x-github-request-id":"1431:7238:14B109F:2212358:5FB00D1A"}
+[debug] [2020-11-14T19:15:25.814Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Sat, 14 Nov 2020 19:15:24 GMT","content-type":"application/json; charset=utf-8","content-length":"1413","status":"200 OK","cache-control":"private, max-age=60, s-maxage=60","vary":"Accept, Authorization, Cookie, X-GitHub-OTP, Accept-Encoding, Accept, X-Requested-With","etag":"\"e68b86c3abb68c99e18a70e9d9cb58ef83ea0e184e71381951d4d25dd9b329af\"","last-modified":"Sat, 14 Nov 2020 17:00:09 GMT","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4991","x-ratelimit-reset":"1605383145","x-ratelimit-used":"9","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","x-github-request-id":"DB65:2F1D:577AE4:E35AA5:5FB02CCC"}
 [info] 
 [info] +  Success! Logged into GitHub as arnoldirias 
 [info] 
-[debug] [2020-11-14T17:00:31.723Z] >>> HTTP REQUEST GET https://api.github.com/repos//actions/secrets/public-key?type=owner  
- 
-[debug] [2020-11-14T17:00:32.464Z] <<< HTTP RESPONSE 404 {"server":"GitHub.com","date":"Sat, 14 Nov 2020 17:00:31 GMT","content-type":"application/json; charset=utf-8","content-length":"74","status":"404 Not Found","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"repo","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4998","x-ratelimit-reset":"1605376810","x-ratelimit-used":"2","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","vary":"Accept-Encoding, Accept, X-Requested-With","x-github-request-id":"1686:2EA3:1534E3A:22186F7:5FB00D2E"}
-[debug] [2020-11-14T17:00:32.464Z] <<< HTTP RESPONSE BODY Not Found {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
-[debug] [2020-11-14T17:00:37.373Z] >>> HTTP REQUEST GET https://api.github.com/repos/y/actions/secrets/public-key?type=owner  
- 
-[debug] [2020-11-14T17:00:37.771Z] <<< HTTP RESPONSE 404 {"server":"GitHub.com","date":"Sat, 14 Nov 2020 17:00:36 GMT","content-type":"application/json; charset=utf-8","content-length":"74","status":"404 Not Found","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"repo","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4997","x-ratelimit-reset":"1605376810","x-ratelimit-used":"3","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","vary":"Accept-Encoding, Accept, X-Requested-With","x-github-request-id":"1725:0D6F:D2E53D8:152ADAC4:5FB00D34"}
-[debug] [2020-11-14T17:00:37.772Z] <<< HTTP RESPONSE BODY Not Found {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
-[debug] [2020-11-14T17:00:37.969Z] >>> HTTP REQUEST GET https://api.github.com/repos//actions/secrets/public-key?type=owner  
- 
-[debug] [2020-11-14T17:00:38.281Z] <<< HTTP RESPONSE 404 {"server":"GitHub.com","date":"Sat, 14 Nov 2020 17:00:37 GMT","content-type":"application/json; charset=utf-8","content-length":"74","status":"404 Not Found","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"repo","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4996","x-ratelimit-reset":"1605376810","x-ratelimit-used":"4","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","vary":"Accept-Encoding, Accept, X-Requested-With","x-github-request-id":"172E:3BD0:E1B5DED:16A3566D:5FB00D34"}
-[debug] [2020-11-14T17:00:38.282Z] <<< HTTP RESPONSE BODY Not Found {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
-[debug] [2020-11-14T17:00:49.663Z] >>> HTTP REQUEST GET https://api.github.com/repos/master/actions/secrets/public-key?type=owner  
- 
-[debug] [2020-11-14T17:00:49.999Z] <<< HTTP RESPONSE 404 {"server":"GitHub.com","date":"Sat, 14 Nov 2020 17:00:48 GMT","content-type":"application/json; charset=utf-8","content-length":"74","status":"404 Not Found","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"repo","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4995","x-ratelimit-reset":"1605376810","x-ratelimit-used":"5","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","vary":"Accept-Encoding, Accept, X-Requested-With","x-github-request-id":"181C:0ED8:1384D33:2130655:5FB00D40"}
-[debug] [2020-11-14T17:00:50.000Z] <<< HTTP RESPONSE BODY Not Found {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
